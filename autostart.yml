@@ -13,5 +13,5 @@
         @xset -dpms
         @xset s noblank
         point-rpi
-        @chromium-browser --new-window --start-fullscreen https://grafana.dev.lunar.tech/ --window-position=0,0 --user-data-dir=Default --start-fullscreen
-        @chromium-browser --new-window --start-fullscreen https://grafana.dev.lunar.tech/ --window-position=3840,0 --user-data-dir='Profile 1' --start-fullscreen
+        @chromium-browser --new-window --start-fullscreen https://grafana.dev.lunar.tech/ --window-position=0,0 --user-data-dir=Default6 --start-fullscreen
+        @chromium-browser --new-window --start-fullscreen https://grafana.dev.lunar.tech/ --window-position=3840,0 --user-data-dir=Default7 --start-fullscreen
