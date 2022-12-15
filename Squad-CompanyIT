@@ -1,0 +1,17 @@
+- hosts: all
+  become: yes
+  become_method: sudo
+  tasks:
+  - name: Creating a new file
+    copy:
+      dest: "/home/grafana/.config/lxsession/LXDE-pi/autostart"
+      content: |
+        @lxpanel --profile LXDE-pi
+        @pcmanfm --desktop --profile LXDE-pi
+        #@xscreensaver -no-splash
+        @xset s off
+        @xset -dpms
+        @xset s noblank
+        point-rpi
+        @chromium-browser --new-window --start-fullscreen https://grafana.dev.lunar.tech/ --window-position=0,0 --user-data-dir="{{ inventory_hostname }}1" --start-fullscreen
+        @chromium-browser --new-window --start-fullscreen https://grafana.dev.lunar.tech/ --window-position=3840,0 --user-data-dir="{{ inventory_hostname }}" --start-fullscreen
